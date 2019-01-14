@@ -1,8 +1,8 @@
 import numpy as np
 from imageio import imread
-from icm import icm
-from gibbs import gibbs
-from var_bayes import var_bayes
+from algorithms.icm import icm
+from algorithms.gibbs import gibbs
+from algorithms.var_bayes import var_bayes
 from helpers import plot_comparison
 
 
@@ -72,15 +72,16 @@ def add_noise(orgImg, propSP, propG, varSigma, level):
 
 
 algorithms = {"ICM": icm, "Gibbs": gibbs, "Variational Bayes": var_bayes}
-algorithm = algorithms["ICM"]
+# algorithm = algorithms["ICM"]
 
 if __name__ == "__main__":
     # input image
     img_path = 'data/pug-glasses.jpg'
     img = imread(img_path)
 
+
     max_scans = 10
-    consts = [1 / 4, 1]  # set weight parameters for prior and likelihood respectively [w, beta]
+    consts = [1/4, 1]  # set weight parameters for prior and likelihood respectively [w, beta]
     noise = [[0.2, 0.2, 0.1, 3], [0.2, 0.2, 0.1, 3], [1.0, 1.0, 0.1, 1], [1.0, 1.0, 3.2, 1], [0.5, 0.5, 3.2, 1],
              [0.2, 0.2, 0, 2], [0.5, 0.5, 0, 2]]
 
