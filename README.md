@@ -12,9 +12,7 @@ p(\mathbf{\theta} \mid \mathbf{Y}) = \frac{p(\mathbf{Y} \mid \mathbf{\theta}) p(
 
 The denominator is known as the marginal likelihood (or evidence) and represents the probability of the observed data when all of the assumptions have been propogated through and integrated out,
 
-\begin{equation}
-p(\mathbf{Y}) = \int p(\mathbf{Y}, \mathbf{\theta}) d\theta.
-\end{equation}
+<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{equation}&space;p(\mathbf{Y})&space;=&space;\int&space;p(\mathbf{Y},&space;\mathbf{\theta})&space;d\theta.&space;\end{equation}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\begin{equation}&space;p(\mathbf{Y})&space;=&space;\int&space;p(\mathbf{Y},&space;\mathbf{\theta})&space;d\theta.&space;\end{equation}" title="\begin{equation} p(\mathbf{Y}) = \int p(\mathbf{Y}, \mathbf{\theta}) d\theta. \end{equation}" /></a>
 
 Sometimes this integral is intractable (computationally or analytically) so we cannot exploit conjugacy to avoid it's calculation. For this reason we have to make approximations to this integral.
 
