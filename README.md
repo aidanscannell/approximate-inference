@@ -1,5 +1,8 @@
 # Approximate Inference
+
 This work implements and compares a variety of approximate inference techniques for the tasks of image de-noising (restoration) and image segmentation.
+
+1. See notebooks/image_restoration.ipynb for more details.
 
 In machine learning inference is the task of combinging our assumptions with the observed data. More specifically, if we have a set of observed data $\mathbf{Y}$, parameterized by a variable $\theta$, then we wish to obtain the posterior,
 
